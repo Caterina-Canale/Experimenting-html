@@ -1,0 +1,16 @@
+body {
+    background-color: #b7b7b7;
+}
+
+.section1 {
+    width: 400px;
+    height: 200px;
+    background-color: #00D1AE;
+}
+
+.section2 {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+
