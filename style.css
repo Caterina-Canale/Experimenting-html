@@ -26,6 +26,13 @@ p {
     border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+    p { 
+        color: green; 
+        font-size: 50px;
+    }
+}
+
 /*Universal Selectors*/
 *{color: red;}
 
@@ -55,9 +62,45 @@ button {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    box-shadow: 10px 20px 20px green;
+}
+
+button.hover {
+    box-shadow:  10px 20px 20px rgb(97. 96, 96);
+}
+
+@media (max-width: 600px) {
+    button a { 
+        color: yellow; 
+        font-size: 50px;
+    }
 }
 
 .icon {
     font-size: 30px;
     color: coral;
+}
+
+items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.figma-video {
+    animation-name: manish;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes manish {
+    from {
+        margin-right: 600px;
+    margin-top: 500px;} 
+    to {margin-right: 10px;
+    margin-top: 0px;} 
+} 
+
+.middle {
+    display: flex;
+    flex-direction: column
 }

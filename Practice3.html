@@ -4,23 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caterina Practice 3</title>
     <Link rel="stylesheet" href="Practice3.css">
+    <script src="https://kit.fontawesome.com/b78e9f6423.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <!-- Follow the steps in Part 1 for this section-->
         <img width="40" src="https://tinyurl.com/figma-image" alt="Figma Icon" >
         <nav>
-            <a class="Nav-elements">Product</a>
-            <a class="Nav-elements">Platform</a>
-            <a class="Nav-elements">Design</a>
-            <a class="Nav-elements">Community</a>
+            <a href="#product">Product</a>
+            <a href="#platform">Platform</a>
+            <a href="#design">Design</a>
+            <a href="#community">Community</a>
             <button>Sign Up</button>
         </nav>
 	</header>
 
 	<main>
 	    <!-- Follow the steps in Part 2 for this section-->
-        <section>
+        <section class="Flexbox-section1">
             <video width="350" autoplay muted>
                 <source src="https://tinyurl.com/figma-main-video" type="video/mp4"> 
             </video>
@@ -30,21 +31,23 @@
             </button>
         </section>
 
-        <section>
+        <section class="flexbox-section2">
                 <video width="550" autoplay muted loop>
                     <source src="https://tinyurl.com/figma-middle-1" type="video/mp4"> 
                 </video>
-                <h2 class="header-section2">Design for the web made easy</h2>
-                <p class="p-section1">Figma was built for the future of web. That’s why you’ll see features you won’t find elsewhere.
-                </p>  
-                    <ul>
+                <section class="flexbox-subsection2">
+                    <h2 class="header-section2">Design for the web made easy</h2>
+                    <p class="p-section1">Figma was built for the future of web. That’s why you’ll see features you won’t find elsewhere.
+                    </p>  
+                    <ul class="p-section1">
                         <li class="p-section1"><b>A modern pen tool:</b> Draw in any direction with Vector Networks. No more merging or needing to connect to the path's original point.</li>
                         <li class="p-section1"><b>Instant arc designs:</b> Design clocks, watch screens, or pie charts easily with the Arc tool.</li>
                         <li class="p-section1"><b>Be expressive with OpenType:</b> Tap into advanced font features to fully express your brand</li>
                     </ul>
+                </section>
         </section>
 
-        <section id="yellow-section">
+        <section id="yellow-section" class="flexbox-section2">
             <div>
                 <h1 class="header-section2">A design platform for scale</h1>
                 <p class="p-section1">Great design has the potential to differentiate your product and brand. But great design can’t happen in a silo. Figma brings product teams together for a faster and inclusive design workflow.
@@ -57,33 +60,36 @@
             </video>
         </section>
 
-        <section>
+        <section class="flexbox-section2">
                 <video width="550" autoplay muted loop>
                     <source src="https://tinyurl.com/figma-middle-2" type="video/mp4"> 
                 </video>
-           
+            <section class="flexbox-subsection2">
                 <h2 class="header-section2">Automate and augment your work with Plugins</h2>
                 <p class="p-section1">Remove repetitive tasks, bring in data, and power custom workflows.
                 </p>
-                    <ul>
+                    <ul class="p-section1">
                         <li class="p-section1"><b>Plugins for everything:</b> Stock imagery, flow diagrams, color accessibility, charts, icons, and more.</li>
                         <li class="p-section1"><b>Easy development:</b> If you can build a website, you can build a plugin.</li>
                         <li class="p-section1"><b>Private plugins:</b> Organization customers can create and distribute private plugins within their company.</li>
                     </ul>
+            </section>
         </section>
 
-        <section id="community-section">
+        <section id="community-section" class="flexbox-subsection2">
                 <h2 id="header-community">Join the community</h2>
                 <p id="p-community">Learn from others, share your work, and extend your tool set with a diverse group of designers, plugin creators, researchers, illustrators, content writers, and many more from around the world.
                 </p>
-                <img width="500" src="https://tinyurl.com/fig-community-1" alt="Figma Image 1" class="img">
-                <img width="500" src="https://tinyurl.com/fig-community-2" alt="Figma Image 2" class="img">
-                <img width="500" src="https://tinyurl.com/fig-community-3" alt="Figma Image 3" class="img">
+                <section id="flexbox-subsection4">
+                    <img width="500" src="https://tinyurl.com/fig-community-1" alt="Figma Image 1" class="img">
+                    <img width="500" src="https://tinyurl.com/fig-community-2" alt="Figma Image 2" class="img">
+                    <img width="500" src="https://tinyurl.com/fig-community-3" alt="Figma Image 3" class="img">
+                </section>
                 <button id="button-white">Browse Figma Community
                 </button>
         </section>
 
-        <section id="sign-up">
+        <section id="sign-up" class="Flexbox-section1">
             <h1>Try Figma for free</h1>
             <button>
                 <a>Continue with Google</a>
@@ -92,22 +98,23 @@
             <form>
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
-                <button>
-                    <a>Create Account</a>
-                </button>
-            </form>
-                
+                <section class="flexbox-section2">
+                    <button>
+                        <a>Create Account</a>
+                    </button>
+                </section>
+            </form>       
         </section>        
 	</main>
 
     <footer>
 	    <!-- Follow the steps in Part 3 for this section-->
         <section class="footer-section">
-            <img width="50" src="https://tinyurl.com/figma-svg" alt="Figma Logo 2">
-            <p>Twitter</p>
-            <p>YouTube</p>
-            <p>Instagram</p>
-            <p>Facebook</p>
+            <img width="150" src="https://tinyurl.com/figma-svg" alt="Figma Logo 2">
+            <p><i class="fab fa-twitter icon"></i>Twitter</p>
+            <p><i class="fab fa-youtube icon"></i>YouTube</p>
+            <p><i class="fab fa-instagram icon"></i>Instagram</p>
+            <p><i class="fab fa-facebook-square icon"></i>Facebook</p>
             <p>Manage Cookies</p>
         </section>
         <section class="footer-section">

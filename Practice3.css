@@ -7,16 +7,20 @@ html, body {
 
 header {
     margin: 20px;
+    display:flex;
+    justify-content: space-between;
 }
 
-.Nav-elements {
-    font-size: 20px;
+Nav a {
+    font-size: 24px;
     font-weight: 400; 
     padding: 8px 16px;
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(0,0,0);
 }
-/*check hover*/
-hover{text-decoration: underline;}
+
+nav a:hover{text-decoration: underline;}
 
 button {
     background-color: black;
@@ -24,8 +28,9 @@ button {
     border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
-    padding: 14px 24px 16px 24px;
+    padding: 14px 24px 16px 24px;/*check*/
     cursor: pointer;
+    border: 0px;
 }
 
 .p-section1 {
@@ -69,8 +74,8 @@ div {max-width: 550px;}
     border-radius: 10px;
     margin: 20px;
     max-width: 400px;
-    object-fit: contain;
-}/*check object-fit*/
+    object-fit: cover;
+}
 
 #button-white {
     background-color: white;
@@ -84,19 +89,54 @@ div {max-width: 550px;}
 
 input {
     margin: 10px;
-    border-color: black;
-    border-width: 3px;
+    border: 3px solid #000;
     border-radius: 5px;
+    line-height: normal;
     height: 50px;
     width: 400px;
     color: #282828;
     padding-left: 12px;
-}/*check height, width and font color*/
+    display: block;
+}
 
 footer {
     background-color: #fafafa;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .footer-section {
     margin: 50px;
+}
+
+.Flexbox-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexbox-section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox-subsection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#flexbox-subsection4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    background-color: black;
+    font-size: 20px;
 }
